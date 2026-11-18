@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-jp-mlit-negative-info",
+  "version": "0.1.0",
+  "description": "jp-mlit-negative-info -- the Ministry of Land, Infrastructure, Transport and Tourism (国土交通省) negative-information search site (ネガティブ情報等検索サイト): administrative dispositions (指示, 営業停止, 許可取消 ...) against licensed construction businesses and real-estate brokers, by the minister or the prefecture that…",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-jp-mlit-negative-info": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "jp-mlit-negative-info"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-jp-mlit-negative-info.git"
+  },
+  "mcpName": "io.github.pipeworx-io/jp-mlit-negative-info",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "jp-mlit-negative-info",
+    "gatewaySlug": "jp-mlit-negative-info",
+    "sourceHash": "v1-bfec2f626fad150d2504dcd5b552d3b67153a11ff737dafaa3e775e176a0a37d",
+    "sourceCommit": "48ee615c2b1233ef1f4bac25e30b36e946ff8c80"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/jp-mlit-negative-info",
+  "title": "Jp Mlit Negative Info",
+  "description": "jp-mlit-negative-info -- the Ministry of Land, Infrastructure, Transport and Tourism (国土交通省)…",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/jp-mlit-negative-info",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-jp-mlit-negative-info",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/jp-mlit-negative-info/mcp"
+    }
+  ]
+}

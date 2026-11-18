@@ -1,0 +1,31 @@
+[
+  {
+    "name": "jp_mlit_negative_info_search",
+    "description": "Search Japan's Ministry of Land, Infrastructure, Transport and Tourism (国土交通省) negative-information site (ネガティブ情報等検索サイト) for administrative dispositions against licensed businesses: construction businesses (建設業者) and real-estate brokers (宅地建物取引業者), such as an instruction (指示), a business suspension (営業停止) or a licence revocation (許可取消). Each hit gives the firm, its corporate number (法人番号), head-office address, the disposition date, the authority that issued it (a regional bureau or a prefecture), the action and the record link; ten rows a page, newest first, with the total match count. Firms with a corporate number only: sole proprietors are dropped and counted in skipped_possible_individuals. Search by the Japanese registered name (for example 大林組; the 株式会社 prefix is optional) and/or a month range (from, to as 2025-10); with neither, the last three months are listed and the answer says so. Zero matches states the list and period. Example: sector=\"construction\", query=\"大林組\".",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "sector": {
+          "type": "string",
+          "description": "construction (建設業者, default) or real_estate_broker (宅地建物取引業者)."
+        },
+        "query": {
+          "type": "string",
+          "description": "Business name in Japanese (registered name; the 株式会社 prefix is optional). Optional."
+        },
+        "from": {
+          "type": "string",
+          "description": "First month of the disposition date range, YYYY-MM (2015 onward). Optional."
+        },
+        "to": {
+          "type": "string",
+          "description": "Last month of the disposition date range, YYYY-MM. Optional."
+        },
+        "page": {
+          "type": "number",
+          "description": "Result page, 1 (default); ten rows a page."
+        }
+      }
+    }
+  }
+]
